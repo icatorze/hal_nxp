@@ -23,26 +23,34 @@
 #define FSL_PHY_DRIVER_VERSION (MAKE_VERSION(2, 0, 0)) /*!< Version 2.0.0. */
 
 /*! @brief Defines the PHY registers. */
-#define PHY_BASICCONTROL_REG 0x00U      /*!< The PHY basic control register. */
-#define PHY_BASICSTATUS_REG 0x01U       /*!< The PHY basic status register. */
-#define PHY_ID1_REG 0x02U               /*!< The PHY ID one register. */
-#define PHY_ID2_REG 0x03U               /*!< The PHY ID two register. */
-#define PHY_AUTONEG_ADVERTISE_REG 0x04U /*!< The PHY auto-negotiate advertise register. */
-#define PHY_OMS_OVERRIDE_REG 0x16U      /*!< The PHY Operation Mode Strap Override register. */
-#define PHY_OMS_STATUS_REG 0x17U        /*!< The PHY Operation Mode Strap Status register. */
-#define PHY_CONTROL1_REG 0x1EU          /*!< The PHY control one register. */
-#define PHY_CONTROL2_REG 0x1FU          /*!< The PHY control two register. */
+#define PHY_BASICCONTROL_REG 			0x00U      /*!< The PHY basic control register. */
+#define PHY_BASICSTATUS_REG 			0x01U       /*!< The PHY basic status register. */
+#define PHY_ID1_REG 				0x02U               /*!< The PHY ID one register. */
+#define PHY_ID2_REG 				0x03U               /*!< The PHY ID two register. */
+#define PHY_AUTONEG_ADVERTISE_REG 		0x04U /*!< The PHY auto-negotiate advertise register. */
+#define PHY_OMS_OVERRIDE_REG 			0x16U      /*!< The PHY Operation Mode Strap Override register. */
+#define PHY_OMS_STATUS_REG 			0x17U        /*!< The PHY Operation Mode Strap Status register. */
+#define PHY_CONTROL1_REG 			0x1EU          /*!< The PHY control one register. */
+#define PHY_CONTROL2_REG 			0x1FU          /*!< The PHY control two register. */
+#define PHY_MII_INT_CONTROL 			0x11U
+#define PHY_MII_INT_STATUS  			0x12U
 
 #define PHY_CONTROL_ID1 0x22U /*!< The PHY ID1*/
 
+
 /*! @brief Defines the mask flag in basic control register. */
-#define PHY_BCTL_DUPLEX_MASK 0x0100U          /*!< The PHY duplex bit mask. */
-#define PHY_BCTL_RESTART_AUTONEG_MASK 0x0200U /*!< The PHY restart auto negotiation mask. */
-#define PHY_BCTL_AUTONEG_MASK 0x1000U         /*!< The PHY auto negotiation bit mask. */
-#define PHY_BCTL_SPEED_MASK 0x2000U           /*!< The PHY speed bit mask. */
-#define PHY_BCTL_LOOP_MASK 0x4000U            /*!< The PHY loop bit mask. */
-#define PHY_BCTL_RESET_MASK 0x8000U           /*!< The PHY reset bit mask. */
-#define PHY_BCTL_SPEED_100M_MASK      0x2000U /*!< The PHY 100M speed mask. */
+#define PHY_BCTL_DUPLEX_MASK 			0x0100U /*!< The PHY duplex bit mask. */
+#define PHY_BCTL_RESTART_AUTONEG_MASK 		0x0200U /*!< The PHY restart auto negotiation mask. */
+#define PHY_BCTL_AUTONEG_MASK 			0x1000U /*!< The PHY auto negotiation bit mask. */
+#define PHY_BCTL_SPEED_MASK 			0x2000U           /*!< The PHY speed bit mask. */
+#define PHY_BCTL_LOOP_MASK 			0x4000U            /*!< The PHY loop bit mask. */
+#define PHY_BCTL_RESET_MASK 			0x8000U           /*!< The PHY reset bit mask. */
+#define PHY_BCTL_SPEED_100M_MASK      		0x2000U /*!< The PHY 100M speed mask. */
+
+
+
+#define PHY_MICR_ENABLE_INT_MASK 0x03U
+#define PHY_MISR_ENABLE_LNKSTS_MASK 0x60U
 
 /*!@brief Defines the mask flag of operation mode in control two register*/
 #define PHY_CTL2_REMOTELOOP_MASK 0x0004U    /*!< The PHY remote loopback mask. */
